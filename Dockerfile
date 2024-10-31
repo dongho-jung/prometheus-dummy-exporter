@@ -11,5 +11,5 @@ MAINTAINER  Dongho Jung <dongho971220@gmail.com>
 
 COPY --from=builder /source/prometheus-dummy-exporter  /bin/prometheus-dummy-exporter
 
-EXPOSE     8080
+EXPOSE     2112
 ENTRYPOINT [ "/bin/prometheus-dummy-exporter" ]
